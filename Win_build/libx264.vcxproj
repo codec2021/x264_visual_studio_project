@@ -603,11 +603,8 @@ del "$(OutDir)"\include\x264_config.h
 MSBuild  $(ProjectFileName) /property:Configuration="Debug_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>mkdir "$(OutDir)"\include
-copy ..\x264.h "$(OutDir)"\include
-copy .\x264_config.h "$(OutDir)"\include
-mkdir $(OutDir)\licenses
-copy ..\COPYING $(OutDir)\licenses\x264.txt</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
     <CustomBuildStep>
       <Message>Custom Clean Step</Message>
@@ -808,11 +805,8 @@ del "$(OutDir)"\include\x264_config.h
 MSBuild  $(ProjectFileName) /property:Configuration="Debug_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>mkdir "$(OutDir)"\include
-copy ..\x264.h "$(OutDir)"\include
-copy .\x264_config.h "$(OutDir)"\include
-mkdir $(OutDir)\licenses
-copy ..\COPYING $(OutDir)\licenses\x264.txt</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
     <CustomBuildStep>
       <Message>Custom Clean Step</Message>
@@ -1332,11 +1326,8 @@ del "$(OutDir)"\include\x264_config.h
 MSBuild  $(ProjectFileName) /property:Configuration="Release_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>mkdir "$(OutDir)"\include
-copy ..\x264.h "$(OutDir)"\include
-copy .\x264_config.h "$(OutDir)"\include
-mkdir $(OutDir)\licenses
-copy ..\COPYING $(OutDir)\licenses\x264.txt</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
     <CustomBuildStep>
       <Message>Custom Clean Step</Message>
@@ -1552,11 +1543,8 @@ del "$(OutDir)"\include\x264_config.h
 MSBuild  $(ProjectFileName) /property:Configuration="Release_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>mkdir "$(OutDir)"\include
-copy ..\x264.h "$(OutDir)"\include
-copy .\x264_config.h "$(OutDir)"\include
-mkdir $(OutDir)\licenses
-copy ..\COPYING $(OutDir)\licenses\x264.txt</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
     <CustomBuildStep>
       <Message>Custom Clean Step</Message>
