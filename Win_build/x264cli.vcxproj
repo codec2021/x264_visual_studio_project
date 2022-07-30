@@ -280,7 +280,7 @@
     <LocalDebuggerWorkingDirectory>$(OutDir)\bin\x64\</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>bin\x64</OutDir>
+    <OutDir>bin\x86</OutDir>
     <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
     <TargetName>x264cli</TargetName>
     <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
