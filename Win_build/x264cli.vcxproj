@@ -324,7 +324,7 @@
       <AdditionalDependencies>libx264d.lib;x264cli_10bd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <LargeAddressAware>true</LargeAddressAware>
-      <ProgramDatabaseFile>$(OutDir)\bin\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(OutDir)\$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
@@ -461,7 +461,7 @@ del /f /q $(OutDir)\licenses\x264.txt
       <AdditionalLibraryDirectories>$(SolutionDir)obj\$(Platform)\;$(OutDir)\lib\x64\;.\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libx264d.lib;x264cli_10bd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
-      <ProgramDatabaseFile>$(OutDir)\bin\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(OutDir)\$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
     </Link>
@@ -595,7 +595,7 @@ del /f /q $(OutDir)\licenses\x264.txt
       <AdditionalDependencies>libx264.lib;x264cli_10b.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <LargeAddressAware>true</LargeAddressAware>
-      <ProgramDatabaseFile>$(OutDir)\bin\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(OutDir)\$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
@@ -626,11 +626,8 @@ del "$(OutDir)"\include\x264_config.h
 MSBuild  $(ProjectFileName) /property:Configuration="Release_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>mkdir "$(OutDir)"\include
-copy ..\x264.h "$(OutDir)"\include
-copy .\x264_config.h "$(OutDir)"\include
-mkdir $(OutDir)\licenses
-copy ..\COPYING $(OutDir)\licenses\x264.txt</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
     <CustomBuildStep>
       <Command>if exist "$(OutDir)"\include\x264.h (
@@ -782,11 +779,8 @@ del "$(OutDir)"\include\x264_config.h
 MSBuild  $(ProjectFileName) /property:Configuration="Release_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>mkdir "$(OutDir)"\include
-copy ..\x264.h "$(OutDir)"\include
-copy .\x264_config.h "$(OutDir)"\include
-mkdir $(OutDir)\licenses
-copy ..\COPYING $(OutDir)\licenses\x264.txt</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
     <CustomBuildStep>
       <Command>if exist "$(OutDir)"\include\x264.h (
